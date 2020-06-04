@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<title>Logi sisse – okidoki</title>
+<link rel="alternate" href="https://www.okidoki.ee/ru/login/" hreflang="ru">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.okidoki.ee/login/">
+<link rel="alternate" href="https://www.okidoki.ee/login/" hreflang="et">
+<link rel="stylesheet" type="text/css" href="/assets/css/packed.196.css">
+<script>isMobileVer = 0; language = 'et'; langUrl = ''; country = 'EE';</script>
+<script src="/assets/js/base.packed.39.js"></script>
+<script src="/assets/js/common/social-login.packed.3.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="/assets/js/common/wresize.packed.6.js"></script>
+<style type="text/css">html,body { background:#f8f8f8; }</style>
+<div id="login">
+<ul class="top"><li class="lang">
+<a href="/ru/login/" title="По-русски" hreflang="ru" rel="alternate" class="grey">RU</a>
+</li></ul>
+<p class="logo"><a href="/">okidoki</a></p>
+<div class="wrap">
+<h1>Sisene oki<i>doki</i> keskkonda</h1>
+<form name="lform" action="/login/try/" method="post">
+<input type="hidden" name="ref" value="">
+<input type="hidden" name="r" value="">
+<div>
+<p class="input"><label for="login-input" class="hidden">Kasutajanimi:</label> <input id="login-input" name="login" type="text" size="55" tabindex="1" autocomplete="username" placeholder="Kasutajanimi"></p>
+<p class="input"><label for="password-input" class="hidden">Parool:</label> <input id="password-input" name="password" type="password" size="55" tabindex="2" autocomplete="current-password" placeholder="Parool"></p>
+<p class="checkbox"><input type="checkbox" name="expires" value="a" tabindex="3" id="fexpires"> <label for="fexpires">Jäta mind meelde</label></p>
+<p class="green-button"><input type="submit" value="Logi sisse" tabindex="4"></p>
+</div>
+</form>
+<p class="or">või</p>
+<p class="authservice fb"><button type="button" data-social-login="fb">Jätka Facebook'iga</button></p>
+<p class="authservice google"><button type="button" data-social-login="google">Jätka Google'iga</button></p>
+</div>
+<ul class="links">
+<li>Unustasid oma <a href="/forgot/">kasutajanime</a> või <a href="/forgot/password/">parooli</a>?</li>
+<li><a href="/register/">Registreeru</a></li>
+</ul>
+</div>
+<script>
+$('#login input[type=checkbox]').icheck();
+socialLoginConfig = {
+    googleClientId: '18785849289-akookraa6ppc7tpg0c3vqbskrjh7bk3g.apps.googleusercontent.com',
+    fbAppId: '479529798873656',
+    postback: '/post/socials/'
+};
+(function(d, s, id) {
+    initScript(d, s, id, "//connect.facebook.net/"+locale+"/sdk.js");
+}(document, 'script', 'facebook-jssdk'));
+(function(d, s, id) {
+    initScript(d, s, id, "//apis.google.com/js/platform.js?onload=initGoogle");
+}(document, 'script', 'google-platform'));
+</script>
+<script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter51026045 = new Ya.Metrika({ id:51026045, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/51026045" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-2059491-1', 'auto');
+ga('send', 'pageview');
+var trackOutboundLink = function(url) {
+ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+function () { document.location = url; }
+}); }
+</script>
+</body>
+</html>
